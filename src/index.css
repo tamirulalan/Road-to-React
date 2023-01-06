@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,21 +8,14 @@ html {
   font-size: 22px;
 }
 
-body {
-  min-height: 100vh;
-  font-family: 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100%; 
   width: 100%; 
   max-width: 500px;
   border: 1px solid mediumblue;
@@ -32,11 +25,15 @@ body {
 header {
   width: 100%;
   padding: 0 0.25em;
-  background-color: mediumblue;
+  background-color: rgb(3, 3, 60);
   color: aliceblue;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  place-content: center;
+ 
+}
+header:h1{
+   text-align: center;
 }
 
 main{
@@ -44,7 +41,7 @@ main{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   overflow-y: auto;
 }
@@ -52,7 +49,7 @@ main{
 footer {
   width: 100%;
   padding: 0.25em;
-  background-color: mediumblue;
+  background-color: rgb(2, 2, 25);
   color: aliceblue;
   display: grid;
   place-content: center;
@@ -66,6 +63,7 @@ ul {
 
 ul li::before {
   content: "\200B";
+  background-color: antiquewhite;
 }
 
 .item {
@@ -126,3 +124,61 @@ ul li::before {
   height: 70vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button, select, span {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+span:focus,
+span:hover{
+  color: rgb(242, 9, 9);
+  background-color: rgb(231, 237, 237);
+  outline: none;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+input {
+  height: 48px;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(7, 194, 119);
+  box-sizing: border-box;
+  display: block;
+} */
